@@ -108,12 +108,14 @@ Maintenant que vous avez la clé WEP, configurez la dans Wireshark afin de déch
 ---
 > **_Montrer une capture d'écran de l'obtention de la clé WEP_**
 > 
-> ![cleWEP](images/Captureclewep.PNG)
+> ![Captureclewep](images/Captureclewep.PNG)
 
 ---
 > **_Question :_** Arrivez-vous à récupérer les informations d’identification (credentials) de l’authentification basique http contenue dans la capture ?
-> 
-> **_Réponse :_** 
+>
+> **_Réponse :_** Oui, les credentials sont admin:admin.
+>
+> ![CaptureadmincredWEP](images/CaptureadmincredWEP.PNG)
 
 ---
 
