@@ -164,7 +164,7 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la passphrase WPA ?
 > 
-> **_Réponse :_**  45 secondes
+> **_Réponse :_**  45 secondes (ma vm n'est pas la plus rapide)
 
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
@@ -191,12 +191,12 @@ Nous avons enlevé une seule trame (choisie stratégiquement) du fichier de capt
 * Répondre aux questions suivantes :
 
 > **_Question :_** Est-ce que vous arrivez à refaire l'exercice ? Pourquoi ou pourquoi pas ?
-> 
-> **_Réponse :_** 
+>
+> **_Réponse :_**  Impossible, la trame manquante est essentielle
+>
+> ![fail](images/al5.png)
 
 ---
 > **_Question :_** Sur la base de votre réponse précédente, arrivez-vous à déduire quelle trame a été effacée ?
 
-> 
-> **_Réponse :_** 
-> 
+> **_Réponse :_**  il manque la trame du 4-way handshake, il manque un des nonces (comme ceux d'une question du dessus), il est donc impossible pour aircrack de dériver les clefs, et sans les clefs, on peut pas retrouver la passphrase (aircrack n'a même pas la possibilité de fouiller le dictionnaire).
