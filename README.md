@@ -42,22 +42,24 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 
 > **_Question :_** Quel filtre avez-vous utilisé
 > 
-> **_Réponse :_**  ![Captureproberequest](images/Captureproberequest.PNG)
+> **_Réponse :_**  Nous avons utilisé le filtre wlan.fc.type_subtype==4![Captureproberequest](images/Captureproberequest.PNG)
 
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
 > 
-> **_Réponse :_**  ![Captureaddressmac](images/Captureaddressmac.PNG)
+> **_Réponse :_**  Nous avons regardé qui est allé à Starbucks, car nous savons que la cible y était allé. Nous avons aussi vérifié l'hôtel Black Rain. Dans les deux cas l'adresse mac était fc:f1:36:22:49:74.![Captureaddressmac](images/Captureaddressmac.PNG)
 
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
-> 
-> **_Réponse :_** 
+>
+> **_Réponse :_**  Dans la capture, c'est dit que c'est SamsungE (Samsung Electronics). Nous avons vérifié le résultat sur le net (macvendors.com) et le résultat correspondait.
+>
+> ![Capturemacvendors](images/Capturemacvendors.PNG)
 
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
 > 
-> **_Réponse :_**  ![Capturelieuxvisite](images/Capturelieuxvisite.PNG)
+> **_Réponse :_**  Comme montré dans la capture ci-dessous : Migros, aéroport de Genève et Fleur de Pains , une boulangerie![Capturelieuxvisite](images/Capturelieuxvisite.PNG)
 
 ---
 
@@ -142,6 +144,10 @@ Nous utiliserons Wireshark pour trouver l’authentification WPA contenue dans l
 
 > **_Fournir une capture d'écran des chiffres aléatoires_**
 >
+> Nonces des messages 1 et 3 : 60cb806f531978f2b6b18d1cad6855e592333764791225fa89ac74e60d12d971
+>
+> Nonces des messages2 et 4 : 72f64cc60d16d2c6f6e61c3ea6a3961f2a9651324918d26f709c48a0e00c51d3
+>
 > ![Capturenonces1](images/Capturenonces1.PNG)
 >
 > ![Capturenonces2](images/Capturenonces2.PNG)
@@ -180,14 +186,13 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
 
->
 > **_Réponse :_** 
 >
-> Adresse IP du serveur : ?
->
-> Nom de Domaine : ?
+> Adresse IP du serveur : 31.13.64.35
 >
 > ![Captureping](images/Captureping.PNG)
+>
+> Nom de Domaine : edge-star-mini-shv-01-amt2.facebook.com
 >
 > ![Capturenslookup](images/Capturenslookup.PNG)
 
@@ -201,9 +206,11 @@ Nous avons enlevé une seule trame (choisie stratégiquement) du fichier de capt
 
 > **_Question :_** Est-ce que vous arrivez à refaire l'exercice ? Pourquoi ou pourquoi pas ?
 > 
-> **_Réponse :_**  ![Captureechecpassephrase](images/Captureechecpassephrase.PNG)
+> **_Réponse :_**  Non, car la trame qui a été enlevée fait que aircrack-ng n'arrive pas à trouver la passphrase du réseau WPA![Captureechecpassephrase](images/Captureechecpassephrase.PNG)
 
 ---
 > **_Question :_** Sur la base de votre réponse précédente, arrivez-vous à déduire quelle trame a été effacée ?
+>
+> Dans la capture ci-dessous on peut voir que le second message du 4-way handshake à été enlevé.
 
 > **_Réponse :_** ![Capture4wayhandshakemanquant](images/Capture4wayhandshakemanquant.PNG)
