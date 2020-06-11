@@ -42,7 +42,7 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 
 > **_Question :_** Quel filtre avez-vous utilisé
 > 
-> **_Réponse :_**  Nous avons utilisé le filtre wlan.fc.type_subtype==4![Captureproberequest](images/Captureproberequest.PNG)
+> **_Réponse :_**  Nous avons utilisé le filtre wlan.fc.type_subtype==4. Ce filtre représente les probe requests.![Captureproberequest](images/Captureproberequest.PNG)
 
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
