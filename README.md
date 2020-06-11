@@ -142,7 +142,7 @@ Nous utiliserons Wireshark pour trouver l’authentification WPA contenue dans l
 
 > **_Fournir une capture d'écran des chiffres aléatoires_**
 > 
-> **_Capture ici_** 
+> ![nonce](images/al2.png)
 
 ---
 
@@ -164,12 +164,12 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la passphrase WPA ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  45 secondes
 
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 > 
-> **_Capture ici_** 
+> ![wpaaircrack](images/al3.png)
 
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
@@ -177,9 +177,10 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 > 
 > **_Réponse :_** 
 > 
-> Adresse IP du serveur : ?
+> Adresse IP du serveur : Il a pingé 31.13.64.35
 >
-> Nom de Domaine : ?
+> Nom de Domaine : en cherchant l'adresse sur internet, il s'agit de `edge-star-mini-shv-01-amt2.facebook.com` de organisation `Facebook Irleand Ltd (facebook.com)`
+> ![ping](images/al4.png)
 
 
 
