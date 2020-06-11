@@ -141,8 +141,14 @@ Nous utiliserons Wireshark pour trouver l’authentification WPA contenue dans l
 * Analyser les messages du 4-way handshake. En particulier, essayer de trouver les chiffres aléatoires (Nonces) échangés entre le client et l’AP.
 
 > **_Fournir une capture d'écran des chiffres aléatoires_**
-> 
-> **_Capture ici_** 
+>
+> ![Capturenonces1](images/Capturenonces1.PNG)
+>
+> ![Capturenonces2](images/Capturenonces2.PNG)
+>
+> ![Capturenonces3](images/Capturenonces3.PNG)
+>
+> ![Capturenonces4](images/Capturenonces4.PNG)
 
 ---
 
@@ -164,22 +170,26 @@ aircrack-ng <nom-du-fichier-capture> -w <nom-du-dictionnaire>
 
 > **_Question :_** Combien de temps avez-vous attendu pour obtenir la passphrase WPA ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  14 secondes
 
 ---
 > **_Montrer une capture d'écran de l'obtention de la passphrase WPA_**
 > 
-> **_Capture ici_** 
+> ![CapturepassphraseWPA](images/CapturepassphraseWPA.PNG)
 
 ---
 > **_Question :_** Lors de la capture, la cible a fait un « ping » sur un serveur. Arrivez-vous à dire de quel serveur il s’agit ?
 
-> 
+>
 > **_Réponse :_** 
-> 
+>
 > Adresse IP du serveur : ?
 >
 > Nom de Domaine : ?
+>
+> ![Captureping](images/Captureping.PNG)
+>
+> ![Capturenslookup](images/Capturenslookup.PNG)
 
 
 
