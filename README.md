@@ -42,12 +42,12 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 
 > **_Question :_** Quel filtre avez-vous utilisé
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  ![Captureproberequest](images/Captureproberequest.PNG)
 
 ---
 > **_Question :_** Quel est l’adresse MAC de la cible ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  ![Captureaddressmac](images/Captureaddressmac.PNG)
 
 ---
 > **_Question :_** Quel est le nom du constructeur de l’interface sans fils de la cible ?
@@ -57,7 +57,7 @@ Nous savons que la cible s’est hébergée à l’hôtel « Black Rain » et qu
 ---
 > **_Question :_** Quel autres endroits la cible a-t-elle probablement visités ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  ![Capturelieuxvisite](images/Capturelieuxvisite.PNG)
 
 ---
 
@@ -201,11 +201,9 @@ Nous avons enlevé une seule trame (choisie stratégiquement) du fichier de capt
 
 > **_Question :_** Est-ce que vous arrivez à refaire l'exercice ? Pourquoi ou pourquoi pas ?
 > 
-> **_Réponse :_** 
+> **_Réponse :_**  ![Captureechecpassephrase](images/Captureechecpassephrase.PNG)
 
 ---
 > **_Question :_** Sur la base de votre réponse précédente, arrivez-vous à déduire quelle trame a été effacée ?
 
-> 
-> **_Réponse :_** 
-> 
+> **_Réponse :_** ![Capture4wayhandshakemanquant](images/Capture4wayhandshakemanquant.PNG)
